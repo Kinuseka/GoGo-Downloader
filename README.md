@@ -2,12 +2,13 @@
 A CLI reliant program that downloads, and searches anime from gogoanime.so 
 
 # Python modules used
-
+```
 -bs4(BeautifulSoup)
 
 -requests
 
 -html5lib(for bs4 lib)
+```
 
 # How to install:
 *assuming user already has pip and python installed*
