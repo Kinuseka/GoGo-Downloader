@@ -1,5 +1,10 @@
 # GoGo-Downloader
 A CLI reliant program that downloads, and searches anime from gogoanime.so 
+#Requirments:
+```
+1. Python v3.x.x 
+2. pip
+```
 
 # Python modules used
 ```
