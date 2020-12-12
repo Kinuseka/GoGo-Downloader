@@ -12,7 +12,7 @@ Python script that downloads anime from Gogoanime.so
 # How to install:
 ***assuming user already has pip and python installed***
 On terminal do 
-``
+```
 $ pip install bs4
 $ pip install requests
 $ pip install htm5lib
