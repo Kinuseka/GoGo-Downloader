@@ -32,7 +32,7 @@ Dont forget to clone this repository in order to download the program
 git clone github.com/Kinuseka/GoGo-Downloader
 ```
 
-**Before you start the python script:**
+**Before you start the python program:**
 -Make sure your directory is the same as the script's
 -Make sure you have external storage permissions enabled
 
