@@ -10,7 +10,14 @@ Python script that downloads anime from Gogoanime.so
 -html5lib(for bs4 lib)
 
 # How to install:
-On terminal do ```$ pip install <module name>```
+On terminal do 
+(assuming user already has pip and python installed)
+``
+$ pip install bs4
+$ pip install requests
+$ pip install htm5lib
+$ pkg install aria2
+```
 Repeat the process till all the required modules are
 installed
 
