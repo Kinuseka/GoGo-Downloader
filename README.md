@@ -30,7 +30,7 @@ $ pkg install aria2
 Dont forget to clone this repository in order to download the script
 ```
 git clone github.com/Kinuseka/GoGo-Downloader
-
+```
 **Before you start the python script:**
 -Make sure your directory is the same as the script's
 -Make sure you have external storage permissions enabled
