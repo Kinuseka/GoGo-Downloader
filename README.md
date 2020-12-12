@@ -22,6 +22,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 **Open terminal and do:**
 ```
+$ apt-get update && apt-get upgrade
 $ pip install bs4
 $ pip install requests
 $ pip install htm5lib
