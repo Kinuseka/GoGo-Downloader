@@ -39,6 +39,6 @@ installed
 
 **It should show up like this**
 
-![](example.png)
+![ff](example.png)
 
 
