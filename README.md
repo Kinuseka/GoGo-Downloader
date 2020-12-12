@@ -29,7 +29,7 @@ $ pkg install aria2
 ```
 Dont forget to clone this repository in order to download the program
 ```
-git clone github.com/Kinuseka/GoGo-Downloader
+git clone https://github.com/Kinuseka/GoGo-Downloader
 ```
 
 **Before you start the python program:**
