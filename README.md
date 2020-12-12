@@ -41,6 +41,9 @@ git clone https://github.com/Kinuseka/GoGo-Downloader
 
 **It should show up like this**
 
-![example of a successfully working program](example.png)
+![](home.png)
+
+**A brief example of what you see should during usage**
+![](example.png)
 
 
