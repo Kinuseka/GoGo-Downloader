@@ -21,7 +21,7 @@ $ pkg install aria2
 Repeat the process till all the required modules are
 installed
 
-#Before you start the python script:
+**Before you start the python script:**
 -Make sure your directory is the same as the script's
 -Make sure you have external storage permissions enabled
 
