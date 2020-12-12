@@ -17,7 +17,9 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 ```
 
 **How to install:**
-**assuming user already has pip and python installed**
+
+***assuming user already has pip and python installed***
+
 **Open terminal and do:**
 ```
 $ pip install bs4
@@ -33,8 +35,10 @@ installed
 -Make sure you have external storage permissions enabled
 
 # To start:
-Do ```$ python RuNime.py```
+```$ python RuNime.py```
 
-You can click ```tab``` to autofill the typing process
+**It should show up like this**
 
-Have fun
+![](example.png)
+
+
