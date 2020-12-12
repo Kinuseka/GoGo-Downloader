@@ -28,7 +28,21 @@ $ pip install requests
 $ pip install html5lib
 $ pkg install aria2
 ```
-~~Dont forget to clone this repository in order to download the program~~
+**Features:**
+```
+•You can Ctrl+C to pause a download during the process
+
+•Bulk episode download
+
+•And many more for you to discover!
+```
+**Upcoming features:**
+```
+•Genre based search (V1.1)
+
+•Able to traverse through pages
+ "e.g. gogoanime.so/?page=2"
+```
 
 **Before you start the python program:**
 -Make sure your directory is the same as the program's directory
