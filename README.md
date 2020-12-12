@@ -25,7 +25,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 $ apt-get update && apt-get upgrade
 $ pip install bs4
 $ pip install requests
-$ pip install htm5lib
+$ pip install html5lib
 $ pkg install aria2
 ```
 ~~Dont forget to clone this repository in order to download the program~~
