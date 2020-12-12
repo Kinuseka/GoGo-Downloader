@@ -27,8 +27,9 @@ $ pip install requests
 $ pip install htm5lib
 $ pkg install aria2
 ```
-Repeat the process till all the required modules are
-installed
+Dont forget to clone this repository in order to download the script
+```
+git clone github.com/Kinuseka/GoGo-Downloader
 
 **Before you start the python script:**
 -Make sure your directory is the same as the script's
