@@ -16,7 +16,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 -html5lib(for bs4 lib)
 ```
 
-**How to install:**
+# How to install:
 
 ***assuming user already has pip and python installed***
 
