@@ -41,7 +41,7 @@ $ pkg install aria2
 •Genre based search (V1.1)
 
 •Able to traverse through pages
- "e.g. gogoanime.so/?page=2"
+ "e.g. gogoanime.so/?page=2" (V1.2)
 ```
 
 **Before you start the python program:**
