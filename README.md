@@ -27,7 +27,7 @@ $ pip install requests
 $ pip install htm5lib
 $ pkg install aria2
 ```
-Dont forget to clone this repository in order to download the script
+Dont forget to clone this repository in order to download the program
 ```
 git clone github.com/Kinuseka/GoGo-Downloader
 ```
