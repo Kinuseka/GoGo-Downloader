@@ -31,7 +31,8 @@ $ pkg install aria2
 ~~Dont forget to clone this repository in order to download the program~~
 
 **Before you start the python program:**
--Make sure your directory is the same as the script's
+-Make sure your directory is the same as the program's directory
+
 -Make sure you have external storage permissions enabled
 
 # To start:
