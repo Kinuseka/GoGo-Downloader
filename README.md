@@ -39,6 +39,6 @@ installed
 
 **It should show up like this**
 
-![ff](example.png)
+![example of a successfully working program](example.png)
 
 
