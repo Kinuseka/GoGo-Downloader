@@ -18,6 +18,8 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 # How to install:
 
+**Download my program on latest release**
+
 ***assuming user already has pip and python installed***
 
 **Open terminal and do:**
