@@ -8,11 +8,11 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 ```
 
 **Python modules used:**
-
+```
 -bs4(BeautifulSoup)
 
 -requests
-
+```
 ~~-html5lib(for bs4 lib)~~
 **No longer requred as of V1.15**
 
