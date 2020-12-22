@@ -16,6 +16,10 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 ~~-html5lib(for bs4 html parser)~~
 **No longer requred as of V1.15**
 
+## Supported Platforms:
+**•Termux: 100% tested**
+**•Windows: Theoretically it will work**
+**•Linux/unix: Theoretically it will work**
 
 ### How to install:
 
