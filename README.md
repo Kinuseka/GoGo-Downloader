@@ -51,7 +51,12 @@ $ pkg install aria2
  
 •Preferred Quality selection (est. V1.3/V1.4)
 
+## New way of accessing the program:
+-Download this [install.sh](https://github.com/Kinuseka/GoGo-Downloader/blob/main/install.sh)
 
+-On terminal go to the install.sh directory and do ```bash install.sh```
+
+-After it is done u can now access the file by typing ```goanime``` and it will start running the program that was on ```/sdcard/GoGo-Downloader``` directory
 
 ## Before you start the python program:
 -Make sure your directory is the same as the program's directory
