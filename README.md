@@ -13,7 +13,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 -requests
 ```
-~~-html5lib(for bs4 lib)~~
+~~-html5lib(for bs4 html parser)~~
 **No longer requred as of V1.15**
 
 
