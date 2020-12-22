@@ -58,12 +58,12 @@ $ pkg install aria2
 
 -After it is done u can now access the file by typing ```goanime``` and it will start running the program that was on ```/sdcard/GoGo-Downloader``` directory
 
-## Before you start the python program:
+### [old method]Before you start the python program:
 -Make sure your directory is the same as the program's directory
 
 -Make sure you have external storage permissions enabled
 
-### To start:
+### [old method]To start:
 ```$ python RuNime.py```
 
 **It should show up like this**
