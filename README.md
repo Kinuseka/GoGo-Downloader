@@ -34,7 +34,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 $ apt-get update && apt-get upgrade
 $ pip install bs4
 $ pip install requests
-$ pip install html5lib
+$ pip install html5lib >"Not required v1.1 above"
 $ pkg install aria2
 ```
 **Basic Features:**
