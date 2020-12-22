@@ -45,12 +45,12 @@ $ pkg install aria2
 ### Upcoming features:
 
 ~~•Genre based search (V1.1)~~ Complete
-```
+
 •Able to traverse through pages
  "e.g. gogoanime.so/?page=2" (V1.2)
  
 •Preferred Quality selection (est. V1.3/V1.4)
-```
+
 
 
 ## Before you start the python program:
