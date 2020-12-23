@@ -58,6 +58,8 @@ $ pkg install aria2
 •Preferred Quality selection (est. V1.3/V1.4)
 
 ## New way of accessing the program:
+****!Only Works in Termux!****
+
 -Download this [install.sh](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Kinuseka/GoGo-Downloader/blob/main/install.sh)
 
 -extract the .zip file
