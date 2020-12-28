@@ -47,8 +47,6 @@ $ pkg install aria2
 
 •Quality selection
 
-•Page selection
-
 •And many more for you to discover!
 ```
 
