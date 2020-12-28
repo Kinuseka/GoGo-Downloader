@@ -45,17 +45,20 @@ $ pkg install aria2
 
 •Genre searching (V1.1 up)
 
+•Quality selection
+
+•Page selection
+
 •And many more for you to discover!
 ```
 
 ### Upcoming features:
 
-~~•Genre based search (V1.1)~~ Complete
+~~•Genre based search (V1.1)~~ Complete(V1.1)
 
-•Able to traverse through pages
- "e.g. gogoanime.so/?page=2" (V1.2)
- 
-•Preferred Quality selection (est. V1.3/V1.4)
+~~•Able to traverse through pages
+ "e.g. gogoanime.so/?page=2" (V1.2),
+•Preferred Quality selection (est. V1.3/V1.4)~~ Complete (v1.2)
 
 ## New way of accessing the program:
 ***(New method only works on termux terminal, for other platforms try the old method)***
