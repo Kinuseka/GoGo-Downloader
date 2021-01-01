@@ -33,13 +33,6 @@ rimeinstaller()
   echo "wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" >> $PREFIX/bin/goupdate!
   echo ">>You can now do 'goupdate! to update'"
 }
-uniinstaller()
-{
-  echo >$PREFIX/bin/gouninstall
-  chmod +x $PREFIX/bin/gouninstall
-  echo "rm $PREFIX/bin/goanime && rm $PREFIX/bin/goupdate! && $PREFIX/bin/gouninstall && rm -r $HOME/storage/shared/GoGo-Downloader && echo 'Uninstalled successfully'" >> $PREFIX/bin/gouninstall
-  echo ">>You can now do 'gouninstall' to uninstall"
-}
 if checker bash; then
   echo ">>Command 'goanime' already setup"
 else
@@ -50,11 +43,6 @@ if checker_2 bash; then
   echo ">>Command 'goupdate!' already setup"
 else
   rimeinstaller
-fi
-if checker_3 bash; then 
-  echo ">>uninstaller setupped"
-else
-  uniinstaller
 fi
 installer()
 {
