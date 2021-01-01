@@ -65,6 +65,7 @@ cleaner()
     echo '>>Cleaned process 2'
   else
     echo '>>skipped process 2'
+  fi
 }
 echo "Installing GoGoDownloader.."
 installer
