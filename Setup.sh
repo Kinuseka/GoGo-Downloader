@@ -7,11 +7,12 @@ if checker bash; then
   echo "Command already setup"
 else
   echo >$PREFIX/bin/goanime
-  echo >$PREFIX/bin/goupdate!
   chmod +x $PREFIX/bin/goanime
-  chmod +x $PREFIX/bin/goupdate!
   echo "cd $HOME/storage/shared/GoGo-Downloader && python RuNime.py" >> $PREFIX/bin/goanime
-  echo "wget -O '-https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh'" >> $PREFIX/bin/goupdate!
+  echo >$PREFIX/bin/goupdate!
+  chmod +x $PREFIX/bin/goupdate!
+  echo "wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" >> $PREFIX/bin/goupdate!
+  echo "You can now do 'goupdate! to update'"
 installer()
 {
   cd "$HOME/storage/shared/GoGo-Downloader"
