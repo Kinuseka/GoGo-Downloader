@@ -24,5 +24,10 @@ installer()
   command mv '$HOME/storage/shared/GoGoDownloader(v1.2 build2)/NineScraper.py' '$HOME/storage/shared/GoGo-Downloader'
   command mv '$HOME/storage/shared/GoGoDownloader(v1.2 build2)/options.ini' '$HOME/storage/shared/GoGo-Downloader'
 }
+cleaner()
+{
+  command rm '$HOME/storage/shared/GoGoDownloader.v1.2pre.zip'
+}
 echo "Installing GoGoDownloader.."
 installer
+cleaner
