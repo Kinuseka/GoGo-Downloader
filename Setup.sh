@@ -31,7 +31,8 @@ if checker bash; then
   echo ">>Command 'goanime' already setup"
 else
   rinnstaller
-fi
+fi 
+
 if checker_2 bash; then
   echo ">>Command 'goupdate!' already setup"
 else
