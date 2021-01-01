@@ -18,11 +18,11 @@ installer()
 {
   cd "$HOME/storage/shared/"
   command wget 'https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.2-prerelease/GoGoDownloader.v1.2pre.zip'
-  command unzip -o '$HOME/storage/shared/GoGo-Downloader/GoGoDownloader v1.2.pre.zip'
-  command mv '$HOME/storage/shared/GoGo-Downloader/GoGoDownloader(v1.2 build2)/goEmbed.py' '$HOME/storage/shared/GoGo-Downloader'
-  command mv '$HOME/storage/shared/GoGo-Downloader/GoGoDownloader(v1.2 build2)/RuNime.py' '$HOME/storage/shared/GoGo-Downloader'
-  command mv '$HOME/storage/shared/GoGo-Downloader/GoGoDownloader(v1.2 build2)/NineScraper.py' '$HOME/storage/shared/GoGo-Downloader'
-  command mv '$HOME/storage/shared/GoGo-Downloader/GoGoDownloader(v1.2 build2)/options.ini' '$HOME/storage/shared/GoGo-Downloader'
+  command unzip -o '$HOME/storage/shared/GoGoDownloader v1.2.pre.zip'
+  command mv '$HOME/storage/shared/GoGoDownloader(v1.2 build2)/goEmbed.py' '$HOME/storage/shared/GoGo-Downloader'
+  command mv '$HOME/storage/shared/GoGoDownloader(v1.2 build2)/RuNime.py' '$HOME/storage/shared/GoGo-Downloader'
+  command mv '$HOME/storage/shared/GoGoDownloader(v1.2 build2)/NineScraper.py' '$HOME/storage/shared/GoGo-Downloader'
+  command mv '$HOME/storage/shared/GoGoDownloader(v1.2 build2)/options.ini' '$HOME/storage/shared/GoGo-Downloader'
 }
 echo "Installing GoGoDownloader.."
 installer
