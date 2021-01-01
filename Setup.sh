@@ -46,7 +46,7 @@ installer()
   command unzip -o 'GoGoDownloader.v1.2pre.zip'
   echo '>>Action_complete process 2'
   DIR='$HOME/storage/shared/GoGo-Downloader'
-  if [ -d "$DIR"]; then
+  if [ -d "$DIR" ]; then
     command mv -f 'GoGoDownloader(v1.2 build2)'/* 'GoGo-Downloader'
     folder_exist=true
   else
@@ -60,7 +60,7 @@ cleaner()
   cd "$HOME/storage/shared/"
   command rm 'GoGoDownloader.v1.2pre.zip'
   echo '>>Cleaned process 1'
-  if ['$folder_exist' = true]; then
+  if [ '$folder_exist' = true ]; then
     command rm -r 'GoGoDownloader(v1.2 build2)'
     echo '>>Cleaned process 2'
   else
