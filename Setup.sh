@@ -50,6 +50,11 @@ if checker_2 bash; then
 else
   rimeinstaller
 fi
+if checker_2 bash; then 
+  echo "uninstaller setupped"
+else
+  uniinstaller
+fi
 installer()
 {
   cd "$HOME/storage/shared/"
