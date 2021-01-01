@@ -50,7 +50,7 @@ if checker_2 bash; then
 else
   rimeinstaller
 fi
-if checker_2 bash; then 
+if checker_3 bash; then 
   echo "uninstaller setupped"
 else
   uniinstaller
