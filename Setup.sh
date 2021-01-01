@@ -41,17 +41,19 @@ fi
 installer()
 {
   cd "$HOME/storage/shared/"
+  command rm -r 'GoGo-Downloader/__pycache__'
   command wget 'https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.2-prerelease/GoGoDownloader.v1.2pre.zip'
   echo '>>Downloaded process 1'
   command unzip -o 'GoGoDownloader.v1.2pre.zip'
   echo '>>Action_complete process 2'
-  DIR='$HOME/storage/shared/GoGo-Downloader'
+  DIR='GoGo-Downloader'
   if [ -d "$DIR" ]; then
     command mv -f 'GoGoDownloader(v1.2 build2)'/* 'GoGo-Downloader'
-    folder_exist=true
+    bool=true
+    echo 'exists'
   else
     command mv 'GoGoDownloader(v1.2 build2)' 'GoGo-Downloader'
-    folder_exist=false
+    echo 'None existant'
   fi
   echo '>>Action_complete process 3'
 }
@@ -60,7 +62,7 @@ cleaner()
   cd "$HOME/storage/shared/"
   command rm 'GoGoDownloader.v1.2pre.zip'
   echo '>>Cleaned process 1'
-  if [ '$folder_exist' = true ]; then
+  if [ "$bool" = true ]; then
     command rm -r 'GoGoDownloader(v1.2 build2)'
     echo '>>Cleaned process 2'
   else
