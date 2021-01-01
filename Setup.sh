@@ -45,7 +45,12 @@ installer()
   echo '>>Downloaded process 1'
   command unzip -o 'GoGoDownloader.v1.2pre.zip'
   echo '>>Action_complete process 2'
-  command mv -f 'GoGoDownloader(v1.2 build2)'/* 'GoGo-Downloader'
+  DIR='$HOME/storage/shared/GoGo-Downloader'
+  if [ -d "$DIR"]; then
+    command mv -f 'GoGoDownloader(v1.2 build2)'/* 'GoGo-Downloader'
+  else
+    command mv -f 'GoGoDownloader(v1.2 build2)' 'GoGo-Downloader'
+  fi
   echo '>>Action_complete process 3'
 }
 cleaner()
