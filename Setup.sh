@@ -49,7 +49,7 @@ installer()
   if [ -d "$DIR"]; then
     command mv -f 'GoGoDownloader(v1.2 build2)'/* 'GoGo-Downloader'
   else
-    command mv -f 'GoGoDownloader(v1.2 build2)' 'GoGo-Downloader'
+    command mv 'GoGoDownloader(v1.2 build2)' 'GoGo-Downloader'
   fi
   echo '>>Action_complete process 3'
 }
