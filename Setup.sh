@@ -4,6 +4,7 @@ initial()
   command pip install bs4
   command pip install requests
   command pkg install aria2
+  command termux-setup-storage
 }
 initial
 checker() 
@@ -13,6 +14,10 @@ checker()
 checker_2()
 {
   command -v goupdate!
+}
+checker_3()
+{
+  command -v gouninstall
 }
 rinnstaller()
 {
@@ -26,6 +31,13 @@ rimeinstaller()
   chmod +x $PREFIX/bin/goupdate!
   echo "wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" >> $PREFIX/bin/goupdate!
   echo ">>You can now do 'goupdate! to update'"
+}
+uniinstaller()
+{
+  echo >$PREFIX/bin/gouninstall
+  chmod +x $PREFIX/bin/gouninstall
+  echo "rm $PREFIX/bin/goanime && rm $PREFIX/bin/goupdate! && $PREFIX/bin/gouninstall && rm -r $HOME/storage/shared/GoGo-Downloader && echo 'Uninstalled successfully'" >> $PREFIX/bin/gouninstall
+  echo ">>You can now do 'gouninstall' to uninstall"
 }
 if checker bash; then
   echo ">>Command 'goanime' already setup"
