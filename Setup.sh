@@ -51,7 +51,7 @@ else
   rimeinstaller
 fi
 if checker_3 bash; then 
-  echo "uninstaller setupped"
+  echo ">>uninstaller setupped"
 else
   uniinstaller
 fi
