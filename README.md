@@ -43,10 +43,6 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
  "e.g. gogoanime.so/?page=2" (V1.2),
 •Preferred Quality selection (est. V1.3/V1.4)~~ Complete (v1.2)
 
-### Before you start the python program:
--Make sure your directory is the same as the program's directory
-
--Make sure you have external storage permissions enabled
 ## Quick Installation:
 **Paste this:**
 
@@ -78,8 +74,12 @@ $ pip install html5lib >"Not required v1.1 above"
 $ pkg install aria2
 ```
 
+### [Manual] Before you start the python program:
+-Make sure your directory is the same as the program's directory
 
-## To start:
+-Make sure you have external storage permissions enabled
+
+## [Manual] To start:
 ```$ python RuNime.py```
 
 **It should show up like this**
