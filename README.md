@@ -23,7 +23,16 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 **•Linux/unix: Theoretically it will work**
 
-### How to install:
+## Quick Installation:
+**Paste this:**
+
+```
+wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash
+```
+
+**To startup simply type "goanime"**
+
+## Manual Installation:
 
 **Download my program on latest release**
 
@@ -50,7 +59,7 @@ $ pkg install aria2
 •And many more for you to discover!
 ```
 
-### Upcoming features:
+## Upcoming features:
 
 ~~•Genre based search (V1.1)~~ Complete(V1.1)
 
@@ -58,23 +67,12 @@ $ pkg install aria2
  "e.g. gogoanime.so/?page=2" (V1.2),
 •Preferred Quality selection (est. V1.3/V1.4)~~ Complete (v1.2)
 
-## New way of accessing the program:
-***(New method only works on termux terminal, for other platforms try the old method)***
-
--Download this [install.sh](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Kinuseka/GoGo-Downloader/blob/main/install.sh)
-
--extract the .zip file
-
--On terminal go to the install.sh directory and do ```bash install.sh```
-
--After it is done u can now access the file by typing ```goanime``` and it will start running the program that was on ```/sdcard/GoGo-Downloader``` directory
-
-### [old method]Before you start the python program:
+### Before you start the python program:
 -Make sure your directory is the same as the program's directory
 
 -Make sure you have external storage permissions enabled
 
-### [old method]To start:
+## To start:
 ```$ python RuNime.py```
 
 **It should show up like this**
