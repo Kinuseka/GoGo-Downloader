@@ -46,9 +46,11 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 ## Quick Installation:
 **Paste this:**
 
-**Step 1:** ```termux-setup-storage``` <- for storage permissions
+**Step 1:** ```termux-setup-storage``` 
 
-**Step 2:** 
+**Step 2:** ```apt update && apt upgrade```
+
+**Step 3:** 
 ```
 wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash 
 ```
