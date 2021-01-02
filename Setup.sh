@@ -5,7 +5,7 @@ initial()
   command pip install bs4
   command pip install requests
   command pkg install aria2
-  y | termux-setup-storage
+  termux-setup-storage | y
 }
 initial
 checker() 
