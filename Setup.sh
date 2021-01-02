@@ -5,8 +5,6 @@ initial()
   command pip install bs4
   command pip install requests
   command pkg install aria2
-  echo "y" | termux-setup-storage
-  read -p "Waiting for 5s for user" -t 5
 }
 initial
 checker() 
