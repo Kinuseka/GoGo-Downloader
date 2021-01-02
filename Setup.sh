@@ -6,7 +6,7 @@ initial()
   command pip install requests
   command pkg install aria2
   echo "y" | termux-setup-storage
-  read -p "Click enter after you enabled storage permission to continue"
+  read -p "Waiting for 5s for user" -t 5
 }
 initial
 checker() 
