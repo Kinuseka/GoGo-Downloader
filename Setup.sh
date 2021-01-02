@@ -33,7 +33,7 @@ rimeinstaller()
   echo >$PREFIX/bin/goupdate!
   chmod +x $PREFIX/bin/goupdate!
   echo "wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" >> $PREFIX/bin/goupdate!
-  echo ">>You can now do 'goupdate! to update'"
+  echo ">>You can now do 'goupdate!' to update"
 }
 if checker bash; then
   echo ">>Command 'goanime' already setup"
