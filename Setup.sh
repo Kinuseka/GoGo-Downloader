@@ -1,7 +1,6 @@
 #!/bin/bash
 initial()
 {
-  echo "Y" | apt update && apt upgrade
   command pkg install python
   command pip install bs4
   command pip install requests
