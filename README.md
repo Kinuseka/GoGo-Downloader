@@ -33,6 +33,8 @@ wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup
 If installation is successful you can simply type
 __goanime__ to start
 
+**Experimental:** For *updates* do ```goupdate!``` on command line
+
 Anime will be downloaded on 
 ```
 /storage/GoGo-Downloader
