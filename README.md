@@ -23,6 +23,30 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 **•Linux/unix: Theoretically it will work**
 
+## Basic Features:
+```
+•You can Ctrl+C to pause a download during the process
+
+•Bulk episode Download!
+
+•Genre searching (V1.1 up)
+
+•Quality selection
+
+•And many more for you to discover!
+```
+## Upcoming features:
+
+~~•Genre based search (V1.1)~~ Complete(V1.1)
+
+~~•Able to traverse through pages
+ "e.g. gogoanime.so/?page=2" (V1.2),
+•Preferred Quality selection (est. V1.3/V1.4)~~ Complete (v1.2)
+
+### Before you start the python program:
+-Make sure your directory is the same as the program's directory
+
+-Make sure you have external storage permissions enabled
 ## Quick Installation:
 **Paste this:**
 
@@ -53,31 +77,7 @@ $ pip install requests
 $ pip install html5lib >"Not required v1.1 above"
 $ pkg install aria2
 ```
-**Basic Features:**
-```
-•You can Ctrl+C to pause a download during the process
 
-•Bulk episode Download!
-
-•Genre searching (V1.1 up)
-
-•Quality selection
-
-•And many more for you to discover!
-```
-
-## Upcoming features:
-
-~~•Genre based search (V1.1)~~ Complete(V1.1)
-
-~~•Able to traverse through pages
- "e.g. gogoanime.so/?page=2" (V1.2),
-•Preferred Quality selection (est. V1.3/V1.4)~~ Complete (v1.2)
-
-### Before you start the python program:
--Make sure your directory is the same as the program's directory
-
--Make sure you have external storage permissions enabled
 
 ## To start:
 ```$ python RuNime.py```
