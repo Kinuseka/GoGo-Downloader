@@ -30,8 +30,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash
 ```
 
-If installation is successful you can simply type
-__goanime__ to start
+If installation is successful you can simply type ```goanime``` to start
 
 **Experimental:** For *updates* do ```goupdate!``` on command line
 
