@@ -5,6 +5,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 ```
 1. Python v3.x.x 
 2. pip
+3. Aria2
 ```
 
 **Python modules used:**
