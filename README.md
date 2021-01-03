@@ -32,7 +32,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 •Genre searching (V1.1 up)
 
-•Quality selection
+•Quality selection (v1.2 up)
 
 •And many more for you to discover!
 ```
