@@ -38,11 +38,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 ```
 ## Upcoming features:
 
-~~•Genre based search (V1.1)~~ Complete(V1.1)
-
-~~•Able to traverse through pages
- "e.g. gogoanime.so/?page=2" (V1.2),
-•Preferred Quality selection (est. V1.3/V1.4)~~ Complete (v1.2)
+**Update:** Massive changes to the code will be upheld on v1.3
 
 ## Quick Installation:
 **Paste this:**
