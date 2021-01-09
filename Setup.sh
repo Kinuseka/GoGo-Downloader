@@ -4,7 +4,7 @@ initial()
   command pkg install python
   command pip install bs4
   command pip install requests
-  command pkg install aria2
+  command apt-get install aria2
 }
 initial
 checker() 
