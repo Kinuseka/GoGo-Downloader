@@ -45,7 +45,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 **Step 1:** ```termux-setup-storage``` 
 
-**Step 2:** ```apt-get update && apt-get upgrade```
+**[optional]Step 2:** ```apt-get update && apt-get upgrade```
 
 **Step 3:** 
 ```
