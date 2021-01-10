@@ -18,7 +18,7 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 **No longer requred as of V1.15**
 
 ## Supported Platforms:
-**•Termux: 100% tested**
+**•Termux[android]: 100% tested**
 
 **•Windows: Need volunteers for testing**
 
