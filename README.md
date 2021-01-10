@@ -20,9 +20,9 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 ## Supported Platforms:
 **•Termux: 100% tested**
 
-**•Windows: Theoretically it will work**
+**•Windows: Need volunteers for testing**
 
-**•Linux/unix: Theoretically it will work**
+**•Linux/unix: Need volunteers for testing**
 
 ## Basic Features:
 ```
