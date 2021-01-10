@@ -23,7 +23,7 @@ rinnstaller()
 {
   echo >$PREFIX/bin/goanime
   chmod +x $PREFIX/bin/goanime
-  echo "#!/bin/bash\n"
+  printf "#!/bin/bash\n"
   'set -m\n'
   "cd $HOME/storage/shared/GoGo-Downloader\n" "python RuNime.py" > $PREFIX/bin/goanime
   echo ">>Setupped 001"
@@ -32,7 +32,7 @@ rimeinstaller()
 {
   echo >$PREFIX/bin/goupdate!
   chmod +x $PREFIX/bin/goupdate!
-  echo "#!/bin/bash\n"
+  printf "#!/bin/bash\n"
   'set -m\n'
   "# wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" > $PREFIX/bin/goupdate!
   echo ">>You can now do 'goupdate!' to update"
