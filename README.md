@@ -41,7 +41,9 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 **Update:** Massive changes to the code will be upheld on v1.3.
 
 ## Quick Installation:
-**Paste this:**
+<font size="5"><b>Termux:</b></font>
+
+Copy and paste these:
 
 **Step 1:** ```termux-setup-storage``` 
 
@@ -76,12 +78,14 @@ $ pip install html5lib >"Not required v1.1 above"
 $ pkg install aria2
 ```
 
-### [Manual] Before you start the python program:
+<font size="5"><b>Before you start the python program:</b></font>
+
 -Make sure your directory is the same as the program's directory
 
 -Make sure you have external storage permissions enabled
 
-## [Manual] To start:
+<font size="5"><b>To start:</b></font>
+
 ```$ python RuNime.py```
 
 **It should show up like this**
