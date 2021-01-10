@@ -23,14 +23,14 @@ rinnstaller()
 {
   echo >$PREFIX/bin/goanime
   chmod +x $PREFIX/bin/goanime
-  echo "cd $HOME/storage/shared/GoGo-Downloader && python RuNime.py" > $PREFIX/bin/goanime
+  echo "#!/bin/bash" "cd $HOME/storage/shared/GoGo-Downloader" "python RuNime.py" > $PREFIX/bin/goanime
   echo ">>Setupped 001"
 }
 rimeinstaller()
 {
   echo >$PREFIX/bin/goupdate!
   chmod +x $PREFIX/bin/goupdate!
-  echo "wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" > $PREFIX/bin/goupdate!
+  echo "#!/bin/bash" "wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" > $PREFIX/bin/goupdate!
   echo ">>You can now do 'goupdate!' to update"
 }
 if checker bash; then
@@ -56,10 +56,10 @@ installer()
   if [ -d "$DIR" ]; then
     command mv -f 'GoGoDownloader(v1.2)'/* 'GoGo-Downloader'
     bool=true
-    echo 'exists'
+    echo '[]1'
   else
     command mv 'GoGoDownloader(v1.2)' 'GoGo-Downloader'
-    echo 'None existant'
+    echo '[]2'
   fi
   echo '>>Action_complete process 3'
 }
