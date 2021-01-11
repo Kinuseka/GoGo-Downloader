@@ -40,6 +40,8 @@ A CLI reliant program that downloads, and searches anime from gogoanime.so
 
 **Update:** Massive changes to the code will be upheld on v1.3.
 
+- Will be adding multiple domain support on v1.3 #2
+
 ## Quick Installation:
 <font size="5"><b>Termux:</b></font>
 
