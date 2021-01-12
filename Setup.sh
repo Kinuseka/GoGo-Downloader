@@ -48,17 +48,17 @@ installer()
 {
   cd "$HOME/storage/shared/"
   command rm -r 'GoGo-Downloader/__pycache__'
-  command wget 'https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.2/GoGoDownloader.v1.2.zip'
+  command wget 'https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-prerelease/GoGoDownloader.v1.3pre.zip'
   echo '>>Downloaded process 1'
-  command unzip -o 'GoGoDownloader.v1.2.zip'
+  command unzip -o 'GoGoDownloader.v1.3pre.zip'
   echo '>>Action_complete process 2'
   DIR='GoGo-Downloader'
   if [ -d "$DIR" ]; then
-    command mv -f 'GoGoDownloader(v1.2)'/* 'GoGo-Downloader'
+    command mv -f 'GoGoDownloader(v1.3 beta)'/* 'GoGo-Downloader'
     bool=true
     echo '[]1'
   else
-    command mv 'GoGoDownloader(v1.2)' 'GoGo-Downloader'
+    command mv 'GoGoDownloader(v1.3 beta)' 'GoGo-Downloader'
     echo '[]2'
   fi
   echo '>>Action_complete process 3'
@@ -66,10 +66,10 @@ installer()
 cleaner()
 {
   cd "$HOME/storage/shared/"
-  command rm 'GoGoDownloader.v1.2.zip'
+  command rm 'GoGoDownloader.v1.3pre.zip'
   echo '>>Cleaned process 1'
   if [ "$bool" = true ]; then
-    command rm -r 'GoGoDownloader(v1.2)'
+    command rm -r 'GoGoDownloader(v1.3 beta)'
     echo '>>Cleaned process 2'
   else
     echo '>>skipped process 2'
