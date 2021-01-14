@@ -1,4 +1,8 @@
 #!/bin/bash
+name='GoGoDownloader(v1.3 beta)'
+zipname='GoGoDownloader.v1.3pre.zip'
+link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-prerelease/GoGoDownloader.v1.3pre.zip'
+
 initial()
 {
   command pkg install python
@@ -48,28 +52,28 @@ installer()
 {
   cd "$HOME/storage/shared/"
   command rm -r 'GoGo-Downloader/__pycache__'
-  command wget 'https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-prerelease/GoGoDownloader.v1.3pre.zip'
+  command wget "${link}"
   echo '>>Downloaded process 1'
-  command unzip -o 'GoGoDownloader.v1.3pre.zip'
+  command unzip -o "${zipname}"
   echo '>>Action_complete process 2'
   DIR='GoGo-Downloader'
   if [ -d "$DIR" ]; then
-    command mv -f 'GoGoDownloader(v1.3 beta)'/* 'GoGo-Downloader'
+    command mv -f "${name}"/* 'GoGo-Downloader'
     bool=true
-    echo '[]1'
+    echo '1'
   else
-    command mv 'GoGoDownloader(v1.3 beta)' 'GoGo-Downloader'
-    echo '[]2'
+    command mv "${name}" 'GoGo-Downloader'
+    echo '2'
   fi
   echo '>>Action_complete process 3'
 }
 cleaner()
 {
   cd "$HOME/storage/shared/"
-  command rm 'GoGoDownloader.v1.3pre.zip'
+  command rm "${zipname}"
   echo '>>Cleaned process 1'
   if [ "$bool" = true ]; then
-    command rm -r 'GoGoDownloader(v1.3 beta)'
+    command rm -r "${name}"
     echo '>>Cleaned process 2'
   else
     echo '>>skipped process 2'
