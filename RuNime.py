@@ -24,4 +24,5 @@ def main():
   url = Major(keyword).Link_builder()
   print('\tLoading (restart if it took >10s)')
   start_scraping = NineScraper.scrape_web(url, setter)
+  #commitment
 main()
