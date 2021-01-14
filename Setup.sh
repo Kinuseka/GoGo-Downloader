@@ -24,9 +24,9 @@ Uninstalling GoGoDownloader
 dependent()
 { 
   echo "Uninstalling dependencies"
-  pkg uninstall python 
-  pkg uninstall rsync 
-  pkg uninstall aria2
+  yes | pkg uninstall python 
+  yes | pkg uninstall rsync 
+  yes | pkg uninstall aria2
 }
 uninstall() 
 {
@@ -179,9 +179,6 @@ cleaner()
 echo "Installing GoGoDownloader.."
 installer
 cleaner
-printf '======================================
-Setup finished! do "goanime" to start!
-======================================
-"gouninstall" to uninstall
-======================================
-'
+echo '======================================'
+echo 'Setup finished! do "goanime" to start!'
+echo '======================================'
