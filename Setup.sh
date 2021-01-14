@@ -44,27 +44,27 @@ canelor()
 }
 formatvar=0
 read -p $"This will cause deletion of the folder contents and the implemented commands, continue? (y/n)" formatvar
-if [ $formatvar == "y" ]; then
+if [ "$formatvar" == "y" ]; then
   condition1=1
   read -p $"Would you like to delete all packages/dependencies installed with the program? e.g. python,aria2,etc (y/n)" formatvar 
-  if [ $formatvar = "y" ]; then
+  if [ "$formatvar" = "y" ]; then
     condition2=1 
-  elif [ $formatvar = "n" ]; then 
+  elif [ "$formatvar" = "n" ]; then 
     condition2=0
   else
     echo "Invalid/No answer (Set to No by default)"
     condition2=0
   fi
-elif [ $formatvar = "n" ]; then
+elif [ "$formatvar" = "n" ]; then
   canelor
 else
   canelor
 fi 
 
-if [ $condition1 == 1 ]; then
+if [ "$condition1" == 1 ]; then
   uninstall 
   echo "Removed Program"
-  if [ $condition2 == 1 ]; then
+  if [ "$condition2" == 1 ]; then
     dependent
     echo "Removed Dependencies"
   fi
