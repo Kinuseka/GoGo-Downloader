@@ -1,14 +1,86 @@
 #!/bin/bash
+importance=1
+printf ' ____________  _______
+|             |   _   \
+|             | |  \   \
+|             | |   |  |
+|      _____  | |   |  |
+|           | | |__/  /
+|___________| |______/
+'
+# Changeable Arguments
 name='GoGoDownloader(v1.3 beta)'
+
 zipname='GoGoDownloader.v1.3pre.zip'
+
 link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-prerelease/GoGoDownloader.v1.3pre.zip'
 
+# For the uninstall command
+unistall='#!/bin/bash
+printf "==============================
+Uninstalling GoGoDownloader
+==============================\n
+"
+dependent()
+{ 
+  echo "Uninstalling dependencies"
+  pkg uninstall python 
+  pkg uninstall rsync 
+  pkg uninstall aria2
+}
+uninstall() 
+{
+  command cd $HOME
+  command rm -r "$HOME/storage/shared/GoGo-Downloader"
+  command cd $PREFIX
+  command rm "$PREFIX/bin/goanime"
+  command rm "$PREFIX/bin/goupdate!"
+  command rm "$PREFIX/bin/gouninstall"
+  echo "Done!"
+} 
+canelor()
+{
+  echo "Cancelled"
+}
+formatvar=0
+read -p $"This will cause deletion of the folder contents and the implemented commands, continue? (y/n)" formatvar
+if [ $formatvar == "y" ]; then
+  condition1=1
+  read -p $"Would you like to delete all packages/dependencies installed with the program? e.g. python,aria2,etc (y/n)" formatvar 
+  if [ $formatvar = "y" ]; then
+    condition2=1 
+  elif [ $formatvar = "n" ]; then 
+    condition2=0
+  else
+    echo "Invalid/No answer (Set to No by default)"
+    condition2=0
+  fi
+elif [ $formatvar == "n" ]; then
+  canelor
+else
+  canelor
+fi 
+
+if [ $condition1 == 1 ]; then
+  uninstall 
+  echo "Removed Program"
+  if [ $condition2 == 1 ]; then
+    dependent
+    echo "Removed Dependencies"
+  fi
+fi 
+'
+
+# Setup area
 initial()
 {
-  command pkg install python
+  echo "-------Installing Requirements-------"
+  command apt-get install python 
+  command apt-get install rsync
   command pip install bs4
   command pip install requests
   command apt-get install aria2
+  echo "-------Requirements Installed-------"
 }
 initial
 checker() 
@@ -22,6 +94,12 @@ checker_2()
 checker_3()
 {
   command -v gouninstall
+}
+uninstaller()
+{
+  echo >$PREFIX/bin/gouninstall
+  chmod +x $PREFIX/bin/gouninstall
+  printf "${unistall}" > $PREFIX/bin/gouninstall
 }
 rinnstaller()
 {
@@ -39,15 +117,34 @@ rimeinstaller()
 }
 if checker bash; then
   echo ">>Command 'goanime' already setup"
+  if [ $importance == 1 ]; then
+    echo "Overwrite command detected no.1"
+    rinnstaller
+  fi
 else
   rinnstaller
 fi 
 
 if checker_2 bash; then
   echo ">>Command 'goupdate!' already setup"
+  if [ $importance == 1 ]; then
+    echo "Overwrite command detected no.2"
+    rimeinstaller
+  fi
 else
   rimeinstaller
-fi
+fi 
+
+if checker_3 bash; then
+  echo ">>Command 'gouninstall' already setup"
+  if [ $importance == 1 ]; then
+    echo "Overwrite command detected no.3"
+    uninstaller
+  fi
+else
+  uninstaller
+fi 
+
 installer()
 {
   cd "$HOME/storage/shared/"
@@ -58,11 +155,11 @@ installer()
   echo '>>Action_complete process 2'
   DIR='GoGo-Downloader'
   if [ -d "$DIR" ]; then
-    command mv -f "${name}"/* 'GoGo-Downloader'
+    command rsync -a "${name}"/* 'GoGo-Downloader'
     bool=true
     echo '1'
   else
-    command mv "${name}" 'GoGo-Downloader'
+    command mv -f "${name}" 'GoGo-Downloader'
     echo '2'
   fi
   echo '>>Action_complete process 3'
