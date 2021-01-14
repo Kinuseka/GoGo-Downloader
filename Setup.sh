@@ -179,6 +179,9 @@ cleaner()
 echo "Installing GoGoDownloader.."
 installer
 cleaner
-echo '======================================'
-echo 'Setup finished! do "goanime" to start!'
-echo '======================================'
+printf '======================================
+Setup finished! do "goanime" to start!
+======================================
+"gouninstall" to uninstall
+======================================
+'
