@@ -55,7 +55,7 @@ if [ $formatvar == "y" ]; then
     echo "Invalid/No answer (Set to No by default)"
     condition2=0
   fi
-elif [ $formatvar == "n" ]; then
+elif [ $formatvar = "n" ]; then
   canelor
 else
   canelor
