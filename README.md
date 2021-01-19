@@ -71,23 +71,47 @@ Anime will be downloaded on
 ## Manual Installation:
 
 **Download my program on latest release**
-
-***assuming user already has pip and python installed***
-
-**Open terminal and do:**
 ```
-$ apt-get update && apt-get upgrade
-$ pip install bs4
-$ pip install requests
-$ pip install html5lib >"Not required v1.1 above"
-$ pkg install aria2
+extract the program from the zip file
+and place it anywhere on your storage that
+is easily accessible
+```
+
+**Install Requirements:**
+```
+apt-get install python
+apt-get install aria2
+```
+
+**Install Dependencies:**
+```
+pip install bs4
+pip install requests
+pkg install aria2
 ```
 
 <font size="5"><b>Before you start the python program:</b></font>
 
--Make sure your directory is the same as the program's directory
+-Make sure you have external storage permissions enable
+**This can be done by doing:**
 
--Make sure you have external storage permissions enabled
+```
+termux-setup-storage
+```
+
+-Make sure you are on the same directory as the program's 
+
+**this can be done by:**
+
+```
+cd /sdcard/GoGo-Downloader
+```
+
+or 
+
+```
+cd /sdcard/directory/to/file
+```
 
 <font size="5"><b>To start:</b></font>
 
