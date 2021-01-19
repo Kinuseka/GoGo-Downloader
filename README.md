@@ -71,6 +71,11 @@ Anime will be downloaded on
 ## Manual Installation:
 
 **Download my program on latest release**
+```
+extract the program from the zip file
+and place it anywhere on your storage that
+is easily accessible
+```
 
 **Install Requirements:**
 ```
