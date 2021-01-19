@@ -8,7 +8,7 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 1. Python v3.x.x 
 2. pip
 3. Aria2
-4. rsync (installation purposes)
+4. rsync (installation purposes v1.3 up)
 ```
 
 **Python modules used:**
@@ -72,22 +72,41 @@ Anime will be downloaded on
 
 **Download my program on latest release**
 
-***assuming user already has pip and python installed***
-
-**Open terminal and do:**
+**Install Requirements:**
 ```
-$ apt-get update && apt-get upgrade
-$ pip install bs4
-$ pip install requests
-$ pip install html5lib >"Not required v1.1 above"
-$ pkg install aria2
+apt-get install python
+apt-get install aria2
+```
+
+**Install Dependencies:**
+```
+pip install bs4
+pip install requests
+pkg install aria2
 ```
 
 <font size="5"><b>Before you start the python program:</b></font>
 
--Make sure your directory is the same as the program's directory
+-Make sure you have external storage permissions enable
+**This can be done by doing:**
 
--Make sure you have external storage permissions enabled
+```
+termux-setup-storage
+```
+
+-Make sure you are on the same directory as the program's 
+
+**this can be done by:**
+
+```
+cd /sdcard/GoGo-Downloader
+```
+
+or 
+
+```
+cd /sdcard/directory/to/file
+```
 
 <font size="5"><b>To start:</b></font>
 
