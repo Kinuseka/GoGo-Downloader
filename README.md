@@ -8,7 +8,7 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 1. Python v3.x.x 
 2. pip
 3. Aria2
-4. rsync (installation purposes)
+4. rsync (installation purposes v1.3 up)
 ```
 
 **Python modules used:**
