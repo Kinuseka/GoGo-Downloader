@@ -9,11 +9,11 @@ printf ' ____________  _______
 |___________| |______/
 '
 # Changeable Arguments
-name='GoGoDownloader(v1.3 beta)'
+name='GoGoDownloader(v1.3)'
 
-zipname='GoGoDownloader.v1.3pre.zip'
+zipname='GoGoDownloader.v1.3.zip'
 
-link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-prerelease/GoGoDownloader.v1.3pre.zip'
+link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3/GoGoDownloader.v1.3.zip'
 
 # For the uninstall command
 unistall='#!/bin/bash
