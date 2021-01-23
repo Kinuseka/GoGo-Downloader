@@ -41,7 +41,7 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 ```
 ## Upcoming features:
 
-Finished, all features were implemented on the latest version
+Done, all features were implemented on the latest version. 
 
 ## Quick Installation:
 <font size="5"><b>Termux:</b></font>
