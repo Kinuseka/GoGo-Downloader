@@ -41,9 +41,7 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 ```
 ## Upcoming features:
 
-**Update:** Massive changes to the code will be upheld on v1.3.
-
-- Will be adding multiple domain support on v1.3 #2
+Finished, all features were implemented on the latest version
 
 ## Quick Installation:
 <font size="5"><b>Termux:</b></font>
