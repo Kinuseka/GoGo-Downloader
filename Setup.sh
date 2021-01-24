@@ -9,7 +9,7 @@ printf ' ____________  _______
 |___________| |______/
 '
 # Changeable Arguments
-name='GoGoDownloader(v1.3)'
+name='GoGoDownloader(v1.3p1)'
 
 zipname='GoGoDownloader.v1.3p1.zip'
 
