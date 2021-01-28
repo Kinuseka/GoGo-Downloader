@@ -75,11 +75,11 @@ fi
 initial()
 {
   echo "-------Installing Requirements-------"
-  command apt-get install python 
-  command apt-get install rsync
+  yes | apt-get install python 
+  yes | apt-get install rsync
   command pip install bs4
   command pip install requests
-  command apt-get install aria2
+  yes | apt-get install aria2
   echo "-------Requirements Installed-------"
 }
 initial
