@@ -8,7 +8,7 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 1. Python v3.x.x 
 2. pip
 3. Aria2
-4. rsync (installation purposes)
+4. rsync (installation purposes v1.3 up)
 ```
 
 **Python modules used:**
@@ -41,9 +41,7 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 ```
 ## Upcoming features:
 
-**Update:** Massive changes to the code will be upheld on v1.3.
-
-- Will be adding multiple domain support on v1.3 #2
+Done, all features were implemented on the latest version. 
 
 ## Quick Installation:
 <font size="5"><b>Termux:</b></font>
@@ -61,7 +59,7 @@ wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup
 
 If installation is successful you can simply type ```goanime``` to start
 
-**Experimental:** For updates do ```goupdate!``` on command line to automatically update to the latest release
+**Info:** For updates do ```goupdate!``` on command line to automatically update to the latest release
 
 Anime will be downloaded on 
 ```
