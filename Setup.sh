@@ -9,11 +9,11 @@ printf ' ____________  _______
 |___________| |______/
 '
 # Changeable Arguments
-name='GoGoDownloader(v1.3 beta)'
+name='GoGoDownloader(v1.3p4)'
 
-zipname='GoGoDownloader.v1.3pre.zip'
+zipname='GoGoDownloader.v1.3p4.zip'
 
-link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-prerelease/GoGoDownloader.v1.3pre.zip'
+link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-patch(4)/GoGoDownloader.v1.3p4.zip'
 
 # For the uninstall command
 unistall='#!/bin/bash
@@ -44,27 +44,27 @@ canelor()
 }
 formatvar=0
 read -p $"This will cause deletion of the folder contents and the implemented commands, continue? (y/n)" formatvar
-if [ $formatvar == "y" ]; then
+if [ "$formatvar" == "y" ]; then
   condition1=1
   read -p $"Would you like to delete all packages/dependencies installed with the program? e.g. python,aria2,etc (y/n)" formatvar 
-  if [ $formatvar = "y" ]; then
+  if [ "$formatvar" = "y" ]; then
     condition2=1 
-  elif [ $formatvar = "n" ]; then 
+  elif [ "$formatvar" = "n" ]; then 
     condition2=0
   else
     echo "Invalid/No answer (Set to No by default)"
     condition2=0
   fi
-elif [ $formatvar == "n" ]; then
+elif [ "$formatvar" = "n" ]; then
   canelor
 else
   canelor
 fi 
 
-if [ $condition1 == 1 ]; then
+if [ "$condition1" == 1 ]; then
   uninstall 
   echo "Removed Program"
-  if [ $condition2 == 1 ]; then
+  if [ "$condition2" == 1 ]; then
     dependent
     echo "Removed Dependencies"
   fi
@@ -75,11 +75,11 @@ fi
 initial()
 {
   echo "-------Installing Requirements-------"
-  command apt-get install python 
-  command apt-get install rsync
+  yes | apt-get install python 
+  yes | apt-get install rsync
   command pip install bs4
   command pip install requests
-  command apt-get install aria2
+  yes | apt-get install aria2
   echo "-------Requirements Installed-------"
 }
 initial
@@ -179,8 +179,7 @@ cleaner()
 echo "Installing GoGoDownloader.."
 installer
 cleaner
+printf 'Do "gouninstall" to uninstall\n'
 printf '======================================
 Setup finished! do "goanime" to start!
-======================================
-Do "gouninstall" to uninstall
 ======================================'
