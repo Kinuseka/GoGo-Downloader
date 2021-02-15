@@ -37,6 +37,8 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 
 •Quality selection (V1.2 up)
 
+•Able to move through pagination
+
 •And many more for you to discover!
 ```
 ## Upcoming features:
