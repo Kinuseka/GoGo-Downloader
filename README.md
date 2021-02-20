@@ -1,5 +1,5 @@
 # GoGo-Downloader
-A CLI reliant program that downloads, and searches anime from gogoanime.so 
+A CLI reliant program that downloads, and searches anime from gogoanime.vc
 
 For an in-depth explanation click here: [Documentation](https://github.com/Kinuseka/GoGo-Downloader/wiki/Documentation)
 
