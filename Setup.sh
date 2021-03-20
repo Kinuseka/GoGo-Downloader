@@ -84,7 +84,7 @@ update()
 } 
 noupdate()
 {
-  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/experimental/Setup.sh | bash -s -- none
+  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh | bash -s -- none
 }
 if [[ "$formatvar" == "y" ]]; then
   update
