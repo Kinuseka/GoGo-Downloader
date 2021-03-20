@@ -71,6 +71,26 @@ if [ "$condition1" == 1 ]; then
 fi 
 '
 
+update='''
+printf "============================="
+printf "Update GoGoDownloader"
+printf "============================="
+Dependencies()
+{
+  echo "-------Installing Requirements-------"
+  yes | apt-get install python 
+  yes | apt-get install rsync
+  command pip install bs4
+  command pip install requests
+  yes | apt-get install aria2
+  echo "-------Requirements Installed-------"
+}
+update()
+{
+  
+}
+'''
+
 # Setup area
 initial()
 {
@@ -82,14 +102,17 @@ initial()
   yes | apt-get install aria2
   echo "-------Requirements Installed-------"
 }
-initial
+
+read -p $"Do you want to update the dependencies installed?()" formatvar
+printf "$1"
+#initial
 checker() 
 {
   command -v goanime
 }
 checker_2()
 {
-  command -v goupdate!
+  command -v goupdate
 }
 checker_3()
 {
@@ -110,11 +133,14 @@ rinnstaller()
 }
 rimeinstaller()
 {
-  echo >$PREFIX/bin/goupdate!
-  chmod +x $PREFIX/bin/goupdate!
+  echo >$PREFIX/bin/goupdate
+  chmod +x $PREFIX/bin/goupdate
   printf "#!/bin/bash\nwget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" > $PREFIX/bin/goupdate!
   echo ">>You can now do 'goupdate!' to update"
 }
+
+
+
 if checker bash; then
   echo ">>Command 'goanime' already setup"
   if [ $importance == 1 ]; then
@@ -126,7 +152,7 @@ else
 fi 
 
 if checker_2 bash; then
-  echo ">>Command 'goupdate!' already setup"
+  echo ">>Command 'goupdate' already setup"
   if [ $importance == 1 ]; then
     echo "Overwrite command detected no.2"
     rimeinstaller
@@ -176,7 +202,7 @@ cleaner()
     echo '>>skipped process 2'
   fi
 }
-echo "Installing GoGoDownloader.."
+echo "Installing GoGoDownloader.." 
 installer
 cleaner
 printf 'Do "gouninstall" to uninstall\n'
