@@ -104,7 +104,7 @@ initial()
 }
 
 
-status= "$1"
+status= "${1}"
 printf "$status\n"
 if [[ "$status" == "update" ]]; then
   read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" formatvar
