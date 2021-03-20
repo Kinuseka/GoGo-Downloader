@@ -214,4 +214,4 @@ printf 'Do "gouninstall" to uninstall\n'
 printf 'Do "goupdate" to update!\n'
 printf '======================================
 Setup finished! do "goanime" to start!
-======================================\n'
+======================================'
