@@ -36,6 +36,7 @@ uninstall()
   command cd $PREFIX
   command rm "$PREFIX/bin/goanime"
   command rm "$PREFIX/bin/goupdate!"
+  command rm "$PREFIX/bin/goupdate"
   command rm "$PREFIX/bin/gouninstall"
   echo "Done!"
 } 
