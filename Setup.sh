@@ -72,6 +72,7 @@ fi
 '
 
 update='''
+#!/bin/bash
 printf "============================="
 printf "Update GoGoDownloader"
 printf "============================="
