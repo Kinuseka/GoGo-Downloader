@@ -105,6 +105,12 @@ initial()
 
 
 printf "THIS IS: ${1}"
+if [[ "$1" == "update" ]]; then
+  read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" choice
+  if [[ choice == "y" ]]; then
+    initial
+  fi
+fi
 #initial
 checker() 
 {
