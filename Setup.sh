@@ -103,8 +103,8 @@ initial()
   echo "-------Requirements Installed-------"
 }
 
-read -p $"Do you want to update the dependencies installed?()" formatvar
-printf "THIS IS: $1"
+
+printf "THIS IS: ${1}"
 #initial
 checker() 
 {
