@@ -76,10 +76,18 @@ printf "============================="
 printf "Update GoGoDownloader"
 printf "============================="
 read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" formatvar 
-if [[ "$formatvar" == "y" ]]; then
+update()
+{
   curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/experimental/Setup.sh | bash -s -- update
-else
+} 
+noupdate()
+{
   curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/experimental/Setup.sh | bash -s -- none
+}
+if [[ "$formatvar" == "y" ]]; then
+  update
+else
+  noupdate
 fi
 '''
 
