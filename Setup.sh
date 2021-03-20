@@ -7,6 +7,7 @@ printf ' ____________  _______
 |      _____  | |   |  |
 |           | | |__/  /
 |___________| |______/
+v1.1
 '
 # Changeable Arguments
 name='GoGoDownloader(v1.3p6)'
