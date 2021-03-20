@@ -80,11 +80,11 @@ Update GoGoDownloader
 read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" formatvar 
 update()
 {
-  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/experimental/Setup.sh | bash -s -- update
+  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh | bash -s -- update
 } 
 noupdate()
 {
-  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/experimental/Setup.sh | bash -s -- none
+  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh | bash -s -- none
 }
 if [[ "$formatvar" == "y" ]]; then
   update
