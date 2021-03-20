@@ -108,7 +108,7 @@ initial()
 
 
 status="${1}"
-printf "$status\n"
+printf "Status: $status\n"
 if [[ $status == "update" ]]; then
   initial
 elif [[ $status == "none" ]]; then
