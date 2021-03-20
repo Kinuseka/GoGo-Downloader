@@ -106,8 +106,8 @@ initial()
 
 status = $1
 if [[ "$status" == "update" ]]; then
-  read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" choice
-  if [[ choice == "y" ]]; then
+  read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" formatvar
+  if [[ formatvar == "y" ]]; then
     initial
   fi
 else
