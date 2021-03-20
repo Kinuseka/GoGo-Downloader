@@ -43,7 +43,7 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 ```
 ## Upcoming features:
 
-Done, all features were implemented on the latest version. 
++ Able to download: Anime cover, description, tags for archival purposes
 
 ## Quick Installation:
 <font size="5"><b>Termux:</b></font>
