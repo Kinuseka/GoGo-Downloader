@@ -13,7 +13,7 @@ name='GoGoDownloader(v1.3p6)'
 
 zipname='GoGoDownloader.v1.3p6.zip'
 
-link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-patch(5)-prerelease/GoGoDownloader.v1.3p5pre.zip'
+link='https://github.com/Kinuseka/GoGo-Downloader/releases/download/V1.3-patch(6)/GoGoDownloader.v1.3p6.zip'
 
 # For the uninstall command
 unistall='#!/bin/bash
