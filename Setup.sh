@@ -104,8 +104,8 @@ initial()
 }
 
 
-printf "THIS IS: ${1} \n"
-if [[ "$1" == "update" ]]; then
+status = $1
+if [[ "$status" == "update" ]]; then
   read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" choice
   if [[ choice == "y" ]]; then
     initial
