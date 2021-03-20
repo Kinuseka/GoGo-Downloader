@@ -75,7 +75,7 @@ update='''
 #!/bin/bash
 printf "=============================
 Update GoGoDownloader
-============================="
+=============================\n"
 read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" formatvar 
 update()
 {
