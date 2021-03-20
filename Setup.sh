@@ -35,8 +35,9 @@ uninstall()
   command rm -r "$HOME/storage/shared/GoGo-Downloader"
   command cd $PREFIX
   command rm "$PREFIX/bin/goanime"
-  command rm "$PREFIX/bin/goupdate!"
+  command rm "$PREFIX/bin/goupdate"
   command rm "$PREFIX/bin/gouninstall"
+  command rm "$PREFIX/bin/goupdate!"
   echo "Done!"
 } 
 canelor()
