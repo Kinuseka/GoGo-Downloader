@@ -75,20 +75,12 @@ update='''
 printf "============================="
 printf "Update GoGoDownloader"
 printf "============================="
-Dependencies()
-{
-  echo "-------Installing Requirements-------"
-  yes | apt-get install python 
-  yes | apt-get install rsync
-  command pip install bs4
-  command pip install requests
-  yes | apt-get install aria2
-  echo "-------Requirements Installed-------"
-}
-update()
-{
-  
-}
+read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" formatvar 
+if [[ "$formatvar" == "y" ]]; then
+  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/experimental/Setup.sh | bash -s -- update
+else
+  curl -L https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/experimental/Setup.sh | bash -s -- none
+fi
 '''
 
 # Setup area
@@ -107,11 +99,6 @@ initial()
 status="${1}"
 printf "$status\n"
 if [[ $status == "update" ]]; then
-  read -p $"Would you like to update all dependencies installed with the program? e.g. python,aria2,etc.. (y/n)" formatvar
-  if [[ formatvar == "y" ]]; then
-    initial
-  fi
-else
   initial
 fi
 #initial
