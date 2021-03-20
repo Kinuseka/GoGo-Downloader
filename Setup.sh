@@ -111,6 +111,10 @@ status="${1}"
 printf "$status\n"
 if [[ $status == "update" ]]; then
   initial
+elif [[ $status == "none"]]; then
+  echo "skip"
+else
+  initial
 fi
 #initial
 checker() 
