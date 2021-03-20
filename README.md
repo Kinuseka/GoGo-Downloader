@@ -56,7 +56,7 @@ Copy and paste these:
 
 **Step 3:** 
 ```
-wget -O - 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash 
+curl -L 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash -s -- update 
 ```
 
 If installation is successful you can simply type ```goanime``` to start
