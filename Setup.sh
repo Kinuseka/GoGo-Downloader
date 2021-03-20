@@ -141,7 +141,7 @@ rimeinstaller()
 {
   echo >$PREFIX/bin/goupdate
   chmod +x $PREFIX/bin/goupdate
-  printf "#!/bin/bash\ncurl -L 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash" > $PREFIX/bin/goupdate
+  printf "#!/bin/bash\ncurl -L 'https://raw.githubusercontent.com/Kinuseka/GoGo-Downloader/main/Setup.sh' | bash -s -- update" > $PREFIX/bin/goupdate
   echo ">>You can now do 'goupdate' to update"
 }
 
