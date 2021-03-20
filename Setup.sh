@@ -110,6 +110,8 @@ if [[ "$1" == "update" ]]; then
   if [[ choice == "y" ]]; then
     initial
   fi
+else
+  initial
 fi
 #initial
 checker() 
