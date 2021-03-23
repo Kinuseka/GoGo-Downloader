@@ -91,12 +91,14 @@ pip install requests
 
 <font size="5"><b>Before you start the python program:</b></font>
 
--Make sure you have external storage permissions enable
+-Make sure you have external storage permissions enabled
 **This can be done by doing:**
 
+**Termux:**
 ```
 termux-setup-storage
 ```
+
 
 -Make sure you are on the same directory as the program's 
 
