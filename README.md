@@ -105,7 +105,7 @@ termux-setup-storage
 **this can be done by:**
 
 ```
-cd /GoGo-Downloader
+cd GoGo-Downloader/
 ```
 
 or 
