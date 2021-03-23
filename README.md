@@ -105,13 +105,13 @@ termux-setup-storage
 **this can be done by:**
 
 ```
-cd /sdcard/GoGo-Downloader
+cd /GoGo-Downloader
 ```
 
 or 
 
 ```
-cd C:\directory\to\file
+cd \directory\to\file
 ```
 
 <font size="5"><b>To start:</b></font>
