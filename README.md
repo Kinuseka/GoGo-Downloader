@@ -77,17 +77,16 @@ and place it anywhere on your storage that
 is easily accessible
 ```
 
-**Install Requirements:**
+**Install Packages:**
 ```
 apt-get install python
 apt-get install aria2
 ```
 
-**Install Dependencies:**
+**Install Requirements:**
 ```
 pip install bs4
 pip install requests
-pkg install aria2
 ```
 
 <font size="5"><b>Before you start the python program:</b></font>
