@@ -111,7 +111,7 @@ cd /sdcard/GoGo-Downloader
 or 
 
 ```
-cd /sdcard/directory/to/file
+cd C:\directory\to\file
 ```
 
 <font size="5"><b>To start:</b></font>
