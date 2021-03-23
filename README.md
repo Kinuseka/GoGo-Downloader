@@ -111,7 +111,7 @@ cd /GoGo-Downloader
 or 
 
 ```
-cd \directory\to\file
+cd /directory/to/file
 ```
 
 <font size="5"><b>To start:</b></font>
