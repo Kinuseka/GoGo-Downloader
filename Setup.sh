@@ -100,8 +100,8 @@ initial()
   echo "-------Installing Requirements-------"
   yes | apt-get install python 
   yes | apt-get install rsync
-  command pip install bs4
-  command pip install requests
+  pip install bs4
+  pip install requests
   yes | apt-get install aria2
   echo "-------Requirements Installed-------"
 }
@@ -182,7 +182,7 @@ installer()
 {
   cd "$HOME/storage/shared/"
   command rm -r 'GoGo-Downloader/__pycache__'
-  command wget "${link}"
+  command curl "${link}"
   echo '>>Downloaded process 1'
   command unzip -o "${zipname}"
   echo '>>Action_complete process 2'
