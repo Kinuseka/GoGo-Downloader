@@ -100,8 +100,8 @@ initial()
   echo "-------Installing Requirements-------"
   yes | apt-get install python 
   yes | apt-get install rsync
-  command pip install bs4
-  command pip install requests
+  pip install bs4
+  pip install requests
   yes | apt-get install aria2
   echo "-------Requirements Installed-------"
 }
@@ -185,18 +185,18 @@ fi
 installer()
 {
   cd "$HOME/storage/shared/"
-  command rm -r 'GoGo-Downloader/__pycache__'
-  command wget "${link}"
+  rm -r 'GoGo-Downloader/__pycache__'
+  curl "${link}"
   echo '>>Downloaded process 1'
-  command unzip -o "${zipname}"
+  unzip -o "${zipname}"
   echo '>>Action_complete process 2'
   DIR='GoGo-Downloader'
   if [ -d "$DIR" ]; then
-    command rsync -a "${name}"/* 'GoGo-Downloader'
+    rsync -a "${name}"/* 'GoGo-Downloader'
     bool=true
     echo '1'
   else
-    command mv -f "${name}" 'GoGo-Downloader'
+    mv -f "${name}" 'GoGo-Downloader'
     echo '2'
   fi
   echo '>>Action_complete process 3'
@@ -204,10 +204,10 @@ installer()
 cleaner()
 {
   cd "$HOME/storage/shared/"
-  command rm "${zipname}"
+  rm "${zipname}"
   echo '>>Cleaned process 1'
   if [ "$bool" = true ]; then
-    command rm -r "${name}"
+    rm -r "${name}"
     echo '>>Cleaned process 2'
   else
     echo '>>skipped process 2'
