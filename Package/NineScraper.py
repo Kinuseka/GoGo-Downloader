@@ -1,5 +1,4 @@
-from bs4 import BeautifulSoup
-import requests, re, sys
+import re, sys
 import goEmbed
 from gAPi import gogo
 goScrape = gogo
@@ -18,6 +17,12 @@ class Download:
     episode_header = 'episodes'
     if ep_sodeint < 2:
       episode_header = 'episode'
+    if ep_sodeint == 0:
+      print('\t---------------------------------')
+      print('\tFound no episodes AT ALL!')
+      print('\t---------------------------------')
+      print("The anime might be still upcoming or has not been uploaded to the site")
+      sys.exit()
     print('\t---------------------------------')
     print('\tFound', episode_total, episode_header, 'in total!')
     print('\t---------------------------------')
@@ -133,9 +138,9 @@ def scrape_web(url, u_copy,**d):
     print('Try making your keywords more specific')
     sys.exit()
   if max_an > 5:
-    print('do ">n" to see the next list')
+    print('do ">" to see more list')
   if page_last > 1:
-    print('do > or < to switch pages')
+    print('do >> or << to switch pages')
     
   xintmax_an = int(max_an)
   while True:
@@ -144,11 +149,11 @@ def scrape_web(url, u_copy,**d):
       xchoice = int(choice_anime)
     except:
       pass
-    if choice_anime == ">n":
+    if choice_anime == ">":
       var1 += 5
       var2 += 5
       show_list(max_an, var1, var2)
-    elif choice_anime == ">":
+    elif choice_anime == ">>":
       if page_on == page_last:
         continue
       else:
@@ -156,7 +161,7 @@ def scrape_web(url, u_copy,**d):
         url = (f'{u_copy}{perset}page={paged}')
         print('Changing page..')
         scrape_web(url, u_copy, setter=setter)
-    elif choice_anime == "<":
+    elif choice_anime == "<<":
       if page_on == 1:
         continue
       else:

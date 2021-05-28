@@ -9,33 +9,66 @@ class Config:
     value = 0
     try:
       self.config.read('options.ini')
-      Option = self.config['Video']['enable']
-      if Option not in ('on','off'):
+      ##--SET VALUE
+      Video_tupQual= ('1080p','720p','480p','360p','best')
+      Video_tupMode = ('auto','manual')
+      Video_tupOption = ("on","off")
+      Global_tupMode= ("download", "archive")
+      ##--end
+      ###--Define Config set
+      
+      #Global config 
+      #--Mother
+      Global = self.config["Global"]
+      #--Child
+      Global_mode = Global["mode"]
+      #-END 
+      
+      #Video Config
+      #--Mother
+      Video = self.config['Video']
+      #--Child
+      Video_option = Video["enable"]
+      Video_qual = Video["quality"]
+      Video_mode = Video["selection"]
+      #-END
+      
+      #Domain Config
+      #--Mother
+      Dom = self.config["Network"]
+      #--Child
+      Dom_option = Dom["domain"]
+      ##--end
+      if Video_option not in Video_tupOption:
         value = 1
-        print(f"[WARNING] Option: {Option} is invalid on 'options.ini'\nAdjusted to select: on")
+        print(f"[WARNING] Option: {Video_option} is invalid on 'options.ini'\nAdjusted to select: on")
         self.config.set('Video','enable','on')
-      if self.config['Video']['enable'] == 'off':
-        pass
-      else:
-        preferredq= ('1080p','720p','480p','360p','best')
-        se = ('auto','manual')
-        quality = self.config['Video']['quality']
-        selector = self.config['Video']['selection']
-        if quality not in preferredq:
+        
+      if Video_option != 'off':
+        if Video_qual not in Video_tupQual:
           value = 1
-          print(f"[WARNING] Quality: '{quality}' is invalid on 'options.ini'\n"
+          print(f"[WARNING] Quality: '{Video_qual}' is invalid on 'options.ini'\n"
           "Adjusted to select: best")
           self.config.set('Video','quality', 'best')
-        if selector not in se: 
+        elif Video_qual != "best":
+          print(f"[WARNING] IT IS RECOMMENDED TO USE THE 'BEST' QUALITY SETTING DUE TO NEW GOGOANIME'S CLOUDFLARE VERIFICATION\n")
+          
+        if Video_mode not in Video_tupMode: 
           value = 1
-          print(f"[WARNING] Selection: '{selector}' is invalid on 'options.ini'\nAdjusted to select: auto")
+          print(f"[WARNING] Selection: '{Video_mode}' is invalid on 'options.ini'\nAdjusted to select: auto")
           self.config.set('Video','selection', 'auto')
+          
+      if Global_mode not in Global_tupMode:
+        value = 1
+        print(f"[WARNING] Selection: '{Global_mode}' is invalid on 'options.ini', reseting")
+        self.config.set('Global','mode', 'download')
+        
       if value == 1:
         with open('options.ini', 'w') as cor:
           self.config.write(cor)
-    except BaseException as error:
+    except KeyError as error:
       if os.path.isfile('options.ini') == False:
-        print("file 'options.ini' not found")
+        print("[FATAL ERROR] file 'options.ini' not found")
       else:
         print('[FATAL ERROR] options.ini is broken, program will fail if not fixed')
         print(error)
@@ -75,20 +108,22 @@ class Config:
       b == True
     try:
       self.config.read('options.ini')
-      if self.config['Network']['domain'] == "so":
+      if self.config['Network']['domain'] == "ai":
         if b:
-          return("so")
-        return('https://gogoanime.so')
+          return("ai")
+        return('https://gogoanime.ai')
       elif self.config['Network']['domain'] == "vc":
         if b:
           return("vc")
         return('https://gogoanime.vc')
       else:
-        print('Invalid input automatic set to "https://gogoanime.so"')
-        return('https://gogoanime.so')
-    except BaseException as e:
+        print('[CONFIG] Invalid input automatic set to "https://gogoanime.vc"')
+        if b:
+          return("vc")
+        return('https://gogoanime.vc')
+    except KeyError as e:
       if debug == True:
         print(e)
-      print('options.ini not found/error occured')
+      print('[FATAL ERROR] options.ini is broken, program will fail if not fixed')
     
   
