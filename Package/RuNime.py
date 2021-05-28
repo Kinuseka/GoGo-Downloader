@@ -1,9 +1,9 @@
 debug = False
-import requests, re, sys, os
+import sys, requests, re
 from gAPi import UCnfg, gogo
 from bs4 import BeautifulSoup
 import NineScraper
-version_id = ['GoGo Downloader v1.34', 'V1.34']
+version_id = ['GoGo Downloader v1.36', 'V1.36']
 select_option =''
 def check_config():
   config = UCnfg.Config()

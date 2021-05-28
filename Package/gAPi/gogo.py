@@ -1,6 +1,6 @@
 import requests, re
 from bs4 import BeautifulSoup
-from .UCnfg import Config
+
 debug=True
 usera = {'User-Agent':'Mozilla/5.0 (Linux; Android 7.0; SM-G892A Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 Mobile Safari/537.36'}
 
@@ -127,10 +127,6 @@ if __name__ == '__main__':
   link = input('link:')
   if link == '':
     link = 'https://gogoanime.so'
-  anime = Anime(link)
-  v = anime.Link()
-  proc = Process(v,1)
-  print(proc.full_link())
-  t = anime.page()
-  proc = Process(v,1)
-  print()
+  print(Episode(link).episode())
+else:
+  from .UCnfg import Config

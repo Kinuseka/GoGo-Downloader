@@ -80,13 +80,13 @@ def get_video_link(site_full):
     quality1 = qualityfind(1).upper()
     link_class, qual_name = Qselect.Quality.quality(quality1,link_found,qualityfind(2))
   else:
-    qual_name = "(HDP)"
+    qual_name = "-mp4"
     link_class = link_found[0]
   try:
     download_link = link_class.find('a')
-  except BaseException as A:
+  except AttributeError as error:
     if debug == True:
-      print(A)
+      print(error)
     download_link = link_class
   try:
     downloadofficial = download_link['href']

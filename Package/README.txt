@@ -4,6 +4,7 @@ TXT version of the documentation
 
 This file is an in-depth explaination to my program and is true to versions:
 V1.2, V1.3, and above
+*Updated: March-20-2021 V1.36
 
 Table of Contents
 - 1.) Features
@@ -67,11 +68,11 @@ After searching from either title, homepage or genre you are greeted with a list
 To select an anime you simply type the number the title is associated with.
 
 
-1.5 ">n" Command:
+1.5 ">" Command:
 Every page there is atleast ≤20 anime titles or shown
 
 The program shows 5 list in initial but typing and entering the command:
-">n" 
+">" 
 will show 5 more in the list
 
 
@@ -79,9 +80,9 @@ will show 5 more in the list
 In gogoanime every page there is atleast 20 anime titles per page, 
 
 If you want to keep exploring more anime titles type and enter:
-">" 
+">>" 
 or 
-"<" to show the previous page
+"<<" to show the previous page
 and should show the titles of that list
 
 in the upper section of the list there is 
@@ -140,12 +141,16 @@ Do not remove that section as it may cause errors in the code.
 
 
 2.2 Video
+OPTIONS:
 enable = on/off
 disabling will disable the quality search feature and return to pre v1.1 way of downloading
 
+OPTIONS:
 quality = best, 1080p, 720p, 480p, 360p
 Will choose the quality if available
 
+
+OPTIONS:
 selection = auto/manual
 If a quality you selected does not match the quality available on the gogoanime server it will either
 
@@ -157,11 +162,10 @@ Be wary that auto is still experimental and may cause errors on newer released a
 
 
 2.3 Network
+OPTIONS:
 domain = so/vc
 
-gogoanime.so apparently is blocked to many countries
-
-So this feature is added to add some compability to countries that have blocked gogoanime.so
+This feature is added to add some compability to geoblocked countries. You can use VPN to bypass these but this is another option for VPN-less solution. Though it may not work 100% of the time in some locations
 
 gogoanime.vc may support countries like India, but if both so or vc is still blocked open an issue
 

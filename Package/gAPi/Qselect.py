@@ -26,8 +26,65 @@ class Quality:
     confine = False
     if quality1 == "BEST":
       print(f">>Preffered: {qualiindex[0]}")
-      print(f">>Found: {qualiindex[0]}")
-      return (url[0],qualiindex[0])
+      #Same mechanic, different method
+      if Append_list(url)[f"link_0"]["Quality"] == qualiindex[0]:
+        print(f">>Found: {qualiindex[0]}")
+        return (url[0],qualiindex[0])
+      else:
+        if u_choice == "manual":
+          print("HDP not found")
+         # print('NO QUALITY MATCHED')
+          print('--Manual Selection--')
+          line = []
+          name = []
+          for num in range(0,5):
+            listed = url[num].text.replace(' ', '').replace('Download', '').strip()
+            name.append(listed)
+            if listed not in qualiindex:
+              break
+            line.append(url[num])
+            print(f'{num+1}.) {listed}')
+          while True:
+            keyword = input('Select quality:')
+            try:
+              keyword = (int(keyword)-1)
+              if keyword > (num-1):
+                continue
+              elif keyword <= 0:
+                continue
+              else:
+                selected = line[keyword]
+                qual = name[keyword]
+                print(f">>Selected: {qual}")
+                return(selected, qual)
+            except BaseException as e:
+              print(e)
+              continue
+        else:
+          print("HDP not found")
+          v_y = (Append_list(url, a=True) - 1)
+          test_value = 5
+          while True:
+            ##Go Lower quality
+            if v_y == 0:
+              test_value -= 1
+              v_y = (Append_list(url, a=True) - 1)
+            #Check for the highest Quality possible
+            try:
+              if Append_list(url)[f"link_{v_y}"]:
+              #Dictionary exist then check if its the highest possible value
+                if Append_list(url)[f"link_{v_y}"]["Quality"] == qualiindex[test_value]:
+                  selected = Append_list(url)[f'link_{v_y}']
+                  processed_qual, processed_link = process_dict(selected)
+                  found = selected["Quality"]
+                  dictionary_link = {"href" : processed_link}
+                  print(f">>Adjusted to: {found}")
+                  return(dictionary_link, processed_qual)
+                else:
+                  v_y -= 1
+            except IndexError:
+              v_y -= 1
+    
     else:
       quality = f"({quality1}-mp4)"
       print(f">>Preffered: {quality}")
@@ -63,7 +120,7 @@ class Quality:
             break
               #raise KeyError('Adjust the quality')
             
-        except BaseException as error:
+        except KeyError as error:
           if debug == True:
             print(error)
           modified = True
@@ -95,7 +152,7 @@ class Quality:
           return(selected, qual)
         else:
           raise KeyError("Find another quality")
-      except:
+      except KeyError:
         modified = True
         print('NO QUALITY MATCHED')
         print('--Manual Selection--')

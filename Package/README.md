@@ -2,6 +2,7 @@
 
 This file is an in-depth explaination to my program and is true to versions: 
 **V1.2, V1.3, and above**
+***Updated: March-3-2021 V1.36**
 
 # TABLE OF CONTENTS 
 - [1.) Features:](#1-features)
@@ -9,14 +10,14 @@ This file is an in-depth explaination to my program and is true to versions:
   * [1.2 Gogoanime homepage Search:](#12-gogoanime-homepage-search)
   * [1.3 Genre Search:](#13-genre-search)
   * [1.4 Select anime:](#14-select-anime)
-  * [1.5 >n Command:](#15--n-command)
-  * [1.6 Page selection:](#16-page-selection)
+  * [1.5 (UPDATED) > Command:](#section15)
+  * [1.6 (UPDATED) Page selection:](#16-page-selection)
   * [1.7 Bulk Downloader:](#17-bulk-downloader)
   * [1.8 Why Aria2:](#18-why-aria2)
 - [2.) options.ini](#2-optionsini)
   * [2.1 Global](#21-global)
   * [2.2 Video](#22-video)
-  * [2.3 Network](#23-network)
+  * [2.3 (UPDATED) Network](#23-network)
 
 **Sections**
 - [1.) Features:](#1-features)
@@ -33,7 +34,7 @@ This file is an in-depth explaination to my program and is true to versions:
 
 ---Anime Selection---
   * [1.4 Select anime:](#14-select-anime)
-  * [1.5 >n Command:](#15--n-command)
+  * [1.5 > Command:](#section15)
   * [1.6 Page selection:](#16-page-selection)
 
 ----Downloader----
@@ -71,13 +72,18 @@ After searching from either title, homepage or genre you are greeted with a list
 
 To select an anime you simply type the number the title is associated with.
 
+<a name="section15"/>
 
-## 1.5 >n Command:
+## 1.5 > Command:
+
 Every page there is atleast ≤20 anime titles or shown
 
 The program shows 5 list in initial but typing and entering the command:
 
-```>n```
+~~```>n```~~
+
+**As of V1.36:**
+Use the ```>``` only
 
 will show 5 more in the list
 
@@ -87,7 +93,7 @@ In gogoanime every page there is atleast 20 anime titles per page,
 
 If you want to keep exploring more anime titles type and enter:
 
-```>``` to show the next page or ``<``
+```>>``` to show the next page or ``<<``
 to show the previous page 
 
 and should show the titles of that list
@@ -159,17 +165,20 @@ Do not remove that section as it may cause errors in the code.
 
 
 ## 2.2 Video
+**OPTIONS:**
 `enable = on/off`
 
 disabling will disable the quality search feature and return to pre v1.1 way of downloading 
 
 --------------------------------------
+**OPTIONS:**
 `quality = best, 1080p, 720p, 480p, 360p`
 
 Will choose the quality if available
 
 --------------------------------------
 
+**OPTIONS:**
 `selection = auto/manual`
 
 If a quality you selected does not match the quality available on the gogoanime server it will either
@@ -183,13 +192,14 @@ Be wary that auto is still experimental and may cause errors on newer released a
 
 ## 2.3 Network
 
-`domain = so/vc`
+**OPTIONS:**
+`domain = ai/vc`
 
-gogoanime.so apparently is **blocked** to many countries.
+~~gogoanime.so apparently is **blocked** to many countries.~~
 
-So this feature is added to add some compability to countries that have blocked gogoanime.so
+This feature is added to add some compability to geoblocked countries. You can use VPN to bypass these but this is another option for VPN-less solution. **Though it may not work 100% of the time in some locations**
 
-gogoanime.vc may support countries like India, but if both **so** or **vc** domains is still blocked open an issue
+gogoanime.vc may support countries like India, but if both **ai** or **vc** domains is still blocked open an issue
 
 > It would be appreciated to also tell me any gogoanime domains that works on your country as long as it is a **clean clone**
 
