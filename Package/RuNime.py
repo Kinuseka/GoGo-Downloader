@@ -3,7 +3,7 @@ import sys, requests, re
 from gAPi import UCnfg, gogo
 from bs4 import BeautifulSoup
 import NineScraper
-version_id = ['GoGo Downloader v1.36', 'V1.36']
+version_id = ['GoGo Downloader v1.37', 'V1.37']
 select_option =''
 def check_config():
   config = UCnfg.Config()
