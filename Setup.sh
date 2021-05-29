@@ -186,7 +186,7 @@ installer()
 {
   cd "$HOME/storage/shared/"
   rm -r 'GoGo-Downloader/__pycache__'
-  curl -o pwd "${link}"
+  curl -L -O "${link}"
   echo '>>Downloaded process 1'
   unzip -o "${zipname}"
   echo '>>Action_complete process 2'
