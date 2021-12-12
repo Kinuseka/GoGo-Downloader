@@ -1,7 +1,7 @@
-# GoGo-Downloader [Depreciated]
+# GoGo-Downloader
 A CLI reliant program that downloads, and searches anime from gogoanime.vc
 
-**Info: Downloading is no longer possible as all links has now Cloudflare verification.**
+**Info: For some titles, downloading is no longer possible as links has Cloudflare verification.**
 
 For an in-depth explanation click here: [Documentation](https://github.com/Kinuseka/GoGo-Downloader/wiki/Documentation)
 
