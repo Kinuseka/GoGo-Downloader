@@ -25,9 +25,9 @@ For an in-depth explanation click here: [Documentation](https://github.com/Kinus
 ## Supported Platforms:
 **•Termux[android]: 100% tested**
 
-**•Windows: Need volunteers for testing**
+**•Windows: Not tested**
 
-**•Linux/unix: Need volunteers for testing**
+**•Linux/unix: Working**
 
 ## Basic Features:
 ```
